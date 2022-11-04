@@ -8,14 +8,19 @@
     initial-scale=1.0">
     <style>
       .navstyle{
-        width:40%;
+        width:300px;
         line-height:60px;
         background-color:#DA70D6;
         position:fixed;
         top:0px;
         right: 0px;
-        height:100%;
+        height:100vh;
         z-index: 150;
+        list-style-type: none;
+        margin-left:0px;
+        padding:10px;
+      
+        
         
       }
       .navbar{
@@ -33,14 +38,14 @@
       }
       .hmbstyle{
         text-align: right;
+        
 
       }
       .logo{
         font-size: 50px;
       }
       .hidden{
-        display: none;
-        
+        right:-300px;
       }
       h1{
         margin-top:90px;
@@ -58,14 +63,9 @@
         margin-bottom:0px;
        
       }
-      
-     
-      
-      nav ul{
-        list-style-type: none;
-      }
       footer div ul{
         list-style-type: none;
+        
        
       }
       footer div{
@@ -81,6 +81,10 @@
         width:100%;
         height:auto;
      }
+     nav li a:hover{
+       background-color: ;
+       color:white;
+     }
     
       
     </style>
@@ -92,12 +96,13 @@
       <tr>
         <td class="logo">WS</td>
      
-        <td class="hmbstyle"><button type="button" onclick="navtoggle()" style="border:none;font-size:50px;"> =  </button></td>
+        <td class="hmbstyle"><button type="button" onclick="navtoggle()" style="height:20px;border:none;font-size:50px;"> =  </button></td>
       </tr>
     </table>
     </div>
-    <nav class="hidden" id="navmenu">
-      <ul class="navstyle">
+    <nav>
+      <div class="hidden navstyle" id="navmenu">
+      <ul >
         <li style="text-align: right;"><button onclick="navtoggle()" style="border:none; font-size:40px;">x</button></li>
         <li>Home</li>
         <li>
@@ -106,6 +111,7 @@
         <li><a href="blog.html">Blog</a></li>
         <li>vocal exercises</li>
       </ul>
+      </div>
     </nav>
     </header>
     <h1>My vocal techniques</h1>
